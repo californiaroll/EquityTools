@@ -1,5 +1,9 @@
 # EquityTools
 
+## Feb 9 2026
+## stock_dcf_valuation1.ipynb
+### Basic DCF valuation implemented for stocks
+
 ## Feb 2 2026
 ## stock_predict_base.ipynb
 ### User can change the ticker, and the output is the 95% confidence interval for the ticker entered by getting the current stock price and the calculated Beta for the stock from yFrinance.

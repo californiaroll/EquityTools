@@ -22,9 +22,25 @@
 ## /Notebooks/stock_jump_diffusion_option_pricing1.ipynb
 ### Option pricing implementing Merton's jump diffusion technique.
 
+### Output is a comparison of Jump Diffusion option valuation with Black-Scholes valuation.
+
+<img width="963" height="267" alt="image" src="https://github.com/user-attachments/assets/aeb729a4-c6c8-4859-866b-c1edc3a85c31" />
+
+
 ## /Notebooks/stock_option_series_with_tests.ipynb
 
 ## /Notebooks/stock_option_val1_black_scholes.ipynb
+### Inputs
+
+<img width="617" height="320" alt="image" src="https://github.com/user-attachments/assets/2a4f5ba9-e8fe-4747-9d2b-12834f26f3cb" />
+
+### Risk Free rates are retrieved from yFinance
+
+### Output is call, put, delta and gamma calulculations
+
+<img width="1097" height="143" alt="image" src="https://github.com/user-attachments/assets/c904c3d9-4dd2-42b8-bbed-51fd638b44d3" />
+<img width="1042" height="150" alt="image" src="https://github.com/user-attachments/assets/340ed788-56d1-4ca4-89e6-8f16eac71cc0" />
+
 
 ## /Notebooks/stock_predict_base.ipynb
 ### User can change the ticker, and the output is the 95% confidence interval for the ticker entered by getting the current stock price and the calculated Beta for the stock from yFrinance.

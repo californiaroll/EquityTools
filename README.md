@@ -7,6 +7,11 @@
 
 <img width="1072" height="662" alt="image" src="https://github.com/user-attachments/assets/00d0cab1-7512-413e-a5c3-b247d727eeec" />
 
+<img width="1268" height="692" alt="image" src="https://github.com/user-attachments/assets/9b855550-e57c-41a8-8335-de30a994ce21" />
+
+<img width="1203" height="386" alt="image" src="https://github.com/user-attachments/assets/632b39fe-1b11-435b-a4f9-0219b25afe93" />
+
+
 ## /Notebooks/stock_dcf_valuation1.ipynb
 ### Basic DCF valuation implemented for stocks
 ### Weighted Average Cost of Capital is calculated automatically from yFinance statistics

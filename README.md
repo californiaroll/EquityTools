@@ -5,6 +5,8 @@
 ## /Notebooks/sstock_annual_volatility.ipynb
 ### User can change the ticker and start_date and end_date.   Annual volatility is calculated and charted for 5 day windows.
 
+<img width="1072" height="662" alt="image" src="https://github.com/user-attachments/assets/00d0cab1-7512-413e-a5c3-b247d727eeec" />
+
 ## /Notebooks/stock_dcf_valuation1.ipynb
 ### Basic DCF valuation implemented for stocks
 ### Weighted Average Cost of Capital is calculated automatically from yFinance statistics

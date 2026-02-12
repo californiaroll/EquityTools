@@ -31,6 +31,9 @@
 
 ### Gets the bid, ask, volume of trades and pricing for a whole series of options for an underlying stock.
 
+<img width="772" height="503" alt="image" src="https://github.com/user-attachments/assets/7ad4583c-61ab-48cc-8918-4f4d4e680ff8" />
+
+
 ## ☑️ /Notebooks/stock_option_val1_black_scholes.ipynb
 ### Inputs
 

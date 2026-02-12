@@ -12,6 +12,8 @@
 ### Weighted Average Cost of Capital is calculated automatically from yFinance statistics
 ### FCF is also downloaded from yFinance, and initial estimate for short term growth is based on most recent growth in FCF.
 
+<img width="1046" height="601" alt="image" src="https://github.com/user-attachments/assets/a872bb15-3c10-4f22-bee5-89e169addee0" />
+
 ## /Notebooks/stock_jump_diffusion_option_pricing1.ipynb
 ### Option pricing implementing Merton's jump diffusion technique.
 

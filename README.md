@@ -22,8 +22,13 @@
 ## /Notebooks/stock_predict_base.ipynb
 ### User can change the ticker, and the output is the 95% confidence interval for the ticker entered by getting the current stock price and the calculated Beta for the stock from yFrinance.
 
+<img width="712" height="567" alt="image" src="https://github.com/user-attachments/assets/503c7a83-f0df-4be3-85a4-cb197cbb3992" />
+
 ## /Notebooks/stock_predict_volatility.ipynb
-
-
-## /Notebooks/sstock_predict_volatility.ipynb
 ### User can change the ticker and start_date and end_date.  Histogfram of price changes calculated.
+
+<img width="1157" height="667" alt="image" src="https://github.com/user-attachments/assets/2a89a26f-ee46-4306-a683-ad89c89b3ba0" />
+
+<img width="1140" height="682" alt="image" src="https://github.com/user-attachments/assets/7b99b9a9-8688-4dea-8916-c31be65e19cc" />
+
+

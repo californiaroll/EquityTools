@@ -2,6 +2,8 @@
 
 ## Feb 2026
 
+To see the roadmap, see the wiki here: https://github.com/californiaroll/EquityTools/wiki
+
 ## ☑️ /Notebooks/sstock_annual_volatility.ipynb
 ### User can change the ticker and start_date and end_date.   Annual volatility is calculated and charted for 5 day windows.
 

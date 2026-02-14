@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "equitytools"
+version = "0.1.0"
+description = "A collection of tools for equity analysis, volatility modeling, and financial analytics."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+authors = [
+{ name = "Jonathan" }
+]
+
+dependencies = [
+"pandas",
+"numpy",
+"matplotlib",
+"yfinance",
+"scipy",
+"scikit-learn"
+]
+
+[tool.setuptools.packages.find]
+include = ["equitytools*"]
+
+[project.optional-dependencies]
+dev = [
+"pytest",
+"black",
+"ruff"
+]
+
+[project.scripts]
+equitytools-demo = "equitytools.cli:main"

@@ -4,3 +4,5 @@ yfinance
 matplotlib
 scikit-learn
 math
+pytest
+

@@ -9,6 +9,16 @@ Please visit me on LinkedIn: <https://www.linkedin.com/in/jonathan-starr-profile
 
 To see the roadmap, see the wiki here: https://github.com/californiaroll/EquityTools/wiki
 
+## Tech Stack
+
+Python, pandas, numpy, matplotlib, yfinance, pytest
+
+## How to Run Tests
+ ```DOS
+pip install -r requirements.txt
+pytest
+ ```
+
 ## ☑️ /Notebooks/sstock_annual_volatility.ipynb
 ### User can change the ticker and start_date and end_date.   Annual volatility is calculated and charted for 5 day windows.
 
@@ -52,7 +62,6 @@ To see the roadmap, see the wiki here: https://github.com/californiaroll/EquityT
 
 <img width="1097" height="143" alt="image" src="https://github.com/user-attachments/assets/c904c3d9-4dd2-42b8-bbed-51fd638b44d3" />
 <img width="1042" height="150" alt="image" src="https://github.com/user-attachments/assets/340ed788-56d1-4ca4-89e6-8f16eac71cc0" />
-
 
 ## ☑️ /Notebooks/stock_predict_base.ipynb
 ### User can change the ticker, and the output is the 95% confidence interval for the ticker entered by getting the current stock price and the calculated Beta for the stock from yFrinance.

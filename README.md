@@ -2,7 +2,6 @@
 
 <img width="153" height="153" alt="jonathan_starr_headshot_small" src="https://github.com/user-attachments/assets/323fa881-15ec-4392-a2a8-623fcebd7bc8" />
 
-
 Please visit me on LinkedIn: <https://www.linkedin.com/in/jonathan-starr-profile/>
 
 ## Feb 2026

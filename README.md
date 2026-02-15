@@ -10,7 +10,7 @@ To see the roadmap, see the wiki here: https://github.com/californiaroll/EquityT
 
 ## Tech Stack
 
-Python, pandas, numpy, matplotlib, yfinance, pytest
+Python, pandas, numpy, matplotlib, yfinance, pytest, scikit-learn, math
 
 ## How to Run Tests
  ```DOS

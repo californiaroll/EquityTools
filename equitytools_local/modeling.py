@@ -6,6 +6,8 @@ import sys
 from scipy.stats import norm
 import numpy as np
 import math
+from datetime import datetime
+import random
 
 def factorial(n):
   """Returns Factorial of a positive integer """
@@ -106,7 +108,12 @@ def e_power_neg_x_squared(x):
     return math.exp(-x**2)   
 
 def erf(x):
+    """ numerical approximation of the error function, """
+    if (x == 0):
+        return 0
+    
     # save the sign of x
+    
     sign = 1 if x >= 0 else -1
     x = abs(x)
 
@@ -122,3 +129,18 @@ def erf(x):
     t = 1.0/(1.0 + p*x)
     y = 1.0 - (((((a5*t + a4)*t) + a3)*t + a2)*t + a1)*t*math.exp(-x*x)
     return sign*y # erf(-x) = -erf(x)
+
+def get_simlation(numYears, val0, avg_market_rturn, sd_market_return):
+    """ Given number of year, average market return and standard deviation of market return, simulate n years of returns.  """
+    current_time = datetime.now()
+    seed_value = int(current_time.timestamp() * 1_000_000)  # Convert to microseconds
+    random.seed(seed_value)
+    current_simul = []
+    current_simul.append(val0)
+    for num in range(1, 11): 
+        if (num == 0):
+            current_simul.append (val0 * ( 1 + inverse_normal (random.random(), avg_market_rturn, sd_market_return)))
+        else:
+            current_simul.append (current_simul[num - 1] * ( 1 + inverse_normal (random.random(), avg_market_rturn, sd_market_return)))
+
+    return   current_simul    

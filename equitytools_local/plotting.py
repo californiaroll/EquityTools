@@ -81,13 +81,35 @@ def plot_ebitda_by_year(financial_data):
     fig.set_xticklabels(financial_data["Date"])
     pass
 
-
-
 def plot_option_payoff(strikes, payoffs):
     """Plot option payoff diagram."""
     pass
 
-
 def plot_dcf_components(years, cash_flows, discounted_values):
     """Plot DCF components."""
     pass
+
+def plot_simul_lines(data):
+    """
+    Plots multiple simulation lines from a list of lists of numbers.
+    Each inner list is treated as a separate line (y-values).
+    X-values are generated automatically as indices.
+    """
+    # Validate input
+    if not isinstance(data, list) or not all(isinstance(row, list) for row in data):
+        raise ValueError("Data must be a list of lists of numbers.")
+
+    plt.figure(figsize=(12, 6))
+    
+    for idx, y_values in enumerate(data):
+        if not all(isinstance(v, (int, float)) for v in y_values):
+            raise ValueError(f"Line {idx+1} contains non-numeric values.")
+        x_values = list(range(len(y_values)))  # Auto-generate X values
+        plt.plot(x_values, y_values, marker='o', label=f"Simulation {idx+1}")
+
+    plt.xlabel("Year")
+    plt.ylabel("$")
+    plt.title("10 Simulations")
+    plt.legend()
+    plt.grid(True)
+    plt.show()

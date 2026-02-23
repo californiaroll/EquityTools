@@ -9,9 +9,7 @@ def plot_confidence_interval(ticker_symbol, rangeForTickerInOneYear, current_pri
     plt.title('95% Confidence Interval for One Year Out - ' + ticker_symbol)
     plt.show()
     
-def plot_price_series(dates, prices):
-    """Plot price series."""
-    pass
+
 
 
 def plot_volatility(stock_data):
@@ -81,14 +79,6 @@ def plot_ebitda_by_year(financial_data):
     fig.set_xticklabels(financial_data["Date"])
     pass
 
-def plot_option_payoff(strikes, payoffs):
-    """Plot option payoff diagram."""
-    pass
-
-def plot_dcf_components(years, cash_flows, discounted_values):
-    """Plot DCF components."""
-    pass
-
 def plot_simul_lines(data):
     """
     Plots multiple simulation lines from a list of lists of numbers.
@@ -113,3 +103,6 @@ def plot_simul_lines(data):
     plt.legend()
     plt.grid(True)
     plt.show()
+    
+
+

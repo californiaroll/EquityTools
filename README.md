@@ -14,8 +14,11 @@ See the full roadmap here → [EquityTools Wiki](https://github.com/californiaro
 
 Python, pandas, numpy, matplotlib, yfinance, pytest, scikit-learn, math
 
-## High Level Architecture Diagram
+## 🏗️  Architecture Diagram
 
+EquityTools is organized as a modular, extensible Python toolkit for equity analysis, valuation, volatility modeling, and technical charting. The project separates research notebooks, reusable library code, and tests, making it easy to explore ideas while maintaining a clean, production‑ready codebase.
+
+📂 Project Structure
 EquityTools/  
 │  
 ├── README.md  
@@ -63,6 +66,38 @@ EquityTools/
     ├── test_modeling.py  
     └── test_plotting.py  
 
+
+## Data Flow Overview
+
+        +-------------------+  
+        |   Data Sources    |  
+        | (yfinance, CSVs)  |  
+        +---------+---------+  
+                  |  
+                  v  
+        +-------------------+  
+        |   data.py         |  
+        | Load & normalize  |  
+        +---------+---------+  
+                  |  
+                  v  
+        +-------------------------+  
+        | technical_indicators.py |  
+        | Compute TI features     |  
+        +---------+---------------+  
+                  |  
+                  v  
+        +-------------------+  
+        |   modeling.py     |  
+        | Predictive models |  
+        +---------+---------+  
+                  |  
+                  v  
+        +-------------------+  
+        |   plotting.py     |  
+        | Visualizations    |  
+        +-------------------+  
+  
 ## How to Run Tests
  ```DOS
 pip install -r requirements.txt

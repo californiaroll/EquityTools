@@ -6,7 +6,9 @@ Please visit me on LinkedIn: <https://www.linkedin.com/in/jonathan-starr-profile
 
 ## Feb 2026
 
-To see the roadmap, see the wiki here: https://github.com/californiaroll/EquityTools/wiki
+## 📍 Roadmap
+
+See the full roadmap here → [EquityTools Wiki](https://github.com/californiaroll/EquityTools/wiki)
 
 ## Tech Stack
 

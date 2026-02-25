@@ -79,3 +79,9 @@ pytest
 
 <img width="767" height="628" alt="image" src="https://github.com/user-attachments/assets/58cded60-de6f-4ee3-bd3a-cd3458d95cda" />
 
+## ☑️ Notebooks/stock_chart_with_rsi_and_bollinger.ipynb
+### User can enter ticker and get stock chart with RSI or stock chart with Bollinger Bands
+
+<img width="1280" height="798" alt="image" src="https://github.com/user-attachments/assets/158339d3-0ca9-4b5d-9d10-13f51cf61a37" />
+
+<img width="1212" height="623" alt="image" src="https://github.com/user-attachments/assets/d99603d8-abb9-4d23-862e-b181a0eb2ce9" />

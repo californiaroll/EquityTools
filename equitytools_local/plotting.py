@@ -104,5 +104,69 @@ def plot_simul_lines(data):
     plt.grid(True)
     plt.show()
     
+def plot_price_with_rsi(df, ticker: str):
+    """
+    Plot closing prices and RSI on two aligned subplots.
+    Assumes df contains 'Close' and 'RSI_20' columns.
+    """
 
+    fig, (ax_price, ax_rsi) = plt.subplots(
+        2, 1, figsize=(12, 8), sharex=True,
+        gridspec_kw={'height_ratios': [3, 1]}
+    )
 
+    # --- Price chart ---
+    ax_price.plot(df.index, df["Close"], label="Close Price", color="blue")
+    ax_price.set_title(f"{ticker} Closing Price")
+    ax_price.set_ylabel("Price ($)")
+    ax_price.grid(True, linestyle="--", alpha=0.5)
+    ax_price.legend()
+
+    # --- RSI chart ---
+    ax_rsi.plot(df.index, df["RSI_14"], label="RSI (20)", color="purple")
+    ax_rsi.axhline(70, color="red", linestyle="--", alpha=0.7)
+    ax_rsi.axhline(30, color="green", linestyle="--", alpha=0.7)
+    ax_rsi.set_title("Relative Strength Index (RSI 20)")
+    ax_rsi.set_ylabel("RSI")
+    ax_rsi.set_xlabel("Date")
+    ax_rsi.grid(True, linestyle="--", alpha=0.5)
+    ax_rsi.legend()
+
+    plt.tight_layout()
+    plt.show()
+
+def plot_price_with_bollinger(df, ticker: str, length: int = 20):
+    """
+    Plot closing prices with Bollinger Bands.
+    Assumes df contains:
+        - 'Close'
+        - f'BB_upper_{length}'
+        - f'BB_middle_{length}'
+        - f'BB_lower_{length}'
+    """
+
+    upper = f"BB_upper_{length}"
+    middle = f"BB_middle_{length}"
+    lower = f"BB_lower_{length}"
+
+    fig, ax = plt.subplots(figsize=(12, 6))
+
+    # --- Price line ---
+    ax.plot(df.index, df["Close"], label="Close Price", color="blue")
+
+    # --- Bollinger Bands ---
+    ax.plot(df.index, df[upper], label="Upper Band", color="red", linestyle="--", alpha=0.7)
+    ax.plot(df.index, df[middle], label="Middle Band (MA)", color="orange", linestyle="--", alpha=0.7)
+    ax.plot(df.index, df[lower], label="Lower Band", color="green", linestyle="--", alpha=0.7)
+
+    # --- Fill between bands ---
+    ax.fill_between(df.index, df[lower], df[upper], color="gray", alpha=0.15)
+
+    ax.set_title(f"{ticker} Closing Price with Bollinger Bands ({length})")
+    ax.set_ylabel("Price ($)")
+    ax.set_xlabel("Date")
+    ax.grid(True, linestyle="--", alpha=0.5)
+    ax.legend()
+
+    plt.tight_layout()
+    plt.show()

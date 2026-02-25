@@ -14,6 +14,55 @@ See the full roadmap here → [EquityTools Wiki](https://github.com/californiaro
 
 Python, pandas, numpy, matplotlib, yfinance, pytest, scikit-learn, math
 
+## High Level Architecture Diagram
+
+EquityTools/  
+│  
+├── README.md  
+├── LICENSE  
+├── pyproject.toml  
+├── requirements.txt  
+├── run_tests.ipynb  
+│  
+├── Notebooks/  
+│   ├── portfolio_calculate_sharpe_ratio.ipynb  
+│   ├── portfolio_country_breakdown.ipynb  
+│   ├── stock_annual_volatility.ipynb  
+│   ├── stock_chart_with_rsi_and_bollinger.ipynb  
+│   ├── stock_dcf_valuation1.ipynb  
+│   ├── stock_jump_diffusion_option_pricing1.ipynb  
+│   ├── stock_option_series_with_tests.ipynb  
+│   ├── stock_option_val1_black_scholes.ipynb  
+│   ├── stock_portfolio_simulations.ipynb  
+│   ├── stock_predict_base.ipynb  
+│   └── stock_predict_volatility.ipynb  
+│  
+├── Workflows/  
+│   └── (GitHub Actions or automation workflows)  
+│  
+├── equitytools_local/  
+│   │  
+│   ├── __init__.py  
+│   │  
+│   ├── data.py  
+│   │  
+│   ├── modeling.py  
+│   │  
+│   └── plotting.py  
+│   │  
+│   ├── technical_indicators.py  
+│   │   ├── add_sma()  
+│   │   ├── add_ema()  
+│   │   ├── add_rsi()  
+│   │   ├── add_macd()  
+│   │   ├── add_bollinger_bands()  
+│   │   └── add_all_indicators()  
+│  
+└── tests/  
+    ├── test_data.py  
+    ├── test_modeling.py  
+    └── test_plotting.py  
+
 ## How to Run Tests
  ```DOS
 pip install -r requirements.txt

@@ -126,13 +126,33 @@ pytest
 <img width="1140" height="682" alt="image" src="https://github.com/user-attachments/assets/7b99b9a9-8688-4dea-8916-c31be65e19cc" />
 
 ## ☑️ Notebooks/portfolio_country_breakdown.ipynb
-### User can enter tickers and stock quantities and see their portfolio breakdown by country
+### User can enter tickers and stock quantities and see their portfolio breakdown in $ invested by country
 
 <img width="767" height="628" alt="image" src="https://github.com/user-attachments/assets/58cded60-de6f-4ee3-bd3a-cd3458d95cda" />
 
 ## ☑️ Notebooks/stock_chart_with_rsi_and_bollinger.ipynb
 ### User can enter ticker and get stock chart with RSI or stock chart with Bollinger Bands
 
+####
+Traditionally, an RSI reading of 70 or above indicates an overbought condition. A reading of 30 or below indicates an oversold condition. In addition to identifying overbought and oversold securities, the RSI can also indicate securities that may be primed for a trend reversal or a corrective pullback in price.
+
+One bullish signal is when the RSI crosses below 30, where it would be considered oversold. But as noted above, bullish RSI signals are best used in uptrends. In a strong downtrend, prices can keep falling even after indicators are oversold, so trades based on that signal may have limited upside and go against the main trend.
+
+Following a strong uptrend, another bullish RSI signal is a reversal after a decline to around 40 to 50, an area considered support during an uptrend. This often confirms a positive momentum shift back toward the uptrend after a pullback, signaling potential for continued gains.
+####
+
 <img width="1280" height="798" alt="image" src="https://github.com/user-attachments/assets/158339d3-0ca9-4b5d-9d10-13f51cf61a37" />
+
+####
+Bollinger Bands are a technical analysis tool that shows the volatility of an asset and potential overbought or oversold conditions by plotting two standard deviations away from a simple moving average.
+
+When a stock's price is close to the upper Bollinger Band, it might be overbought; if it's near the lower band, it might be oversold, signaling potential trading opportunities.
+
+Bollinger Bands work best as a secondary indicator, providing confirmation when used alongside other tools like relative strength index (RSI).
+
+Widening bands indicate rising market volatility and may precede significant price moves, while narrowing bands suggest decreasing volatility and a possible impending breakout.
+
+Trading platforms often include Bollinger Bands as a feature, allowing easy visualization of price movements and adaptability to different market conditions.
+####
 
 <img width="1212" height="623" alt="image" src="https://github.com/user-attachments/assets/d99603d8-abb9-4d23-862e-b181a0eb2ce9" />

@@ -74,4 +74,8 @@ pytest
 
 <img width="1140" height="682" alt="image" src="https://github.com/user-attachments/assets/7b99b9a9-8688-4dea-8916-c31be65e19cc" />
 
+## ☑️ Notebooks/portfolio_country_breakdown.ipynb
+### User can enter tickers and stock quantities and see their portfolio breakdown by country
+
+<img width="767" height="628" alt="image" src="https://github.com/user-attachments/assets/58cded60-de6f-4ee3-bd3a-cd3458d95cda" />
 

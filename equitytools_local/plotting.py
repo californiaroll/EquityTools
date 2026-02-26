@@ -170,3 +170,42 @@ def plot_price_with_bollinger(df, ticker: str, length: int = 20):
 
     plt.tight_layout()
     plt.show()
+
+def plotHoldings(sizes, labels, ticker_symbol):
+    plt.figure(figsize=(8,8))
+    plt.pie(
+    sizes,
+    labels=labels,
+    autopct="%1.1f%%",
+    startangle=140,
+    pctdistance=0.85
+    )
+    plt.title(f"{ticker_symbol} Equity Holdings")
+    plt.tight_layout()
+    plt.show()
+
+def plotSecors(sizes, labels):
+    fig, ax = plt.subplots(figsize=(8, 8))
+    wedges, texts, autotexts = ax.pie(
+        sizes,
+        labels=labels,
+        autopct='%1.1f%%',  # Show percentage
+        startangle=140,     # Rotate start
+        shadow=True,        # Add shadow
+        wedgeprops={'edgecolor': 'black'}
+    )
+    
+    # Improve text appearance
+    for text in texts:
+        text.set_fontsize(10)
+    for autotext in autotexts:
+        autotext.set_color('white')
+        autotext.set_fontsize(9)
+    
+    # Equal aspect ratio ensures pie is drawn as a circle
+    ax.axis('equal')
+    plt.title("Sector Allocation", fontsize=14, fontweight='bold')
+    plt.tight_layout()
+    
+    # Show chart
+    plt.show()

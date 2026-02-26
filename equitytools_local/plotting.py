@@ -2,16 +2,31 @@
 plotting.py
 Visualization utilities for charts and financial plots.
 """
+
+__all__ = [    
+    "plot_confidence_interval",
+    "plot_volatility"
+    "plot_stock_daily_returns",
+    "plot_daily_stock_returns2",
+    "plot_histogram_of_stock_returns",
+    "plot_histogram_of_stock_returns2",
+    "plot_ebitda_by_year",
+    "plot_simul_lines",
+    "plot_price_with_rsi",
+    "plot_price_with_bollinger",
+    "plotHoldings",
+    "plotSecors"
+]
+
+
 import matplotlib.pyplot as plt
 
 def plot_confidence_interval(ticker_symbol, rangeForTickerInOneYear, current_price):
     plt.bar(['2.5% Result', 'Current Stock Price', '97.5% Result'], [rangeForTickerInOneYear[0], current_price, rangeForTickerInOneYear[1]], color='gray')
     plt.title('95% Confidence Interval for One Year Out - ' + ticker_symbol)
     plt.show()
+
     
-
-
-
 def plot_volatility(stock_data):
     """Plot volatility over time."""
     # Line chart for daily returns

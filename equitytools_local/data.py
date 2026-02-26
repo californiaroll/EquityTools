@@ -1,4 +1,15 @@
 """Utilities for loading, cleaning, and transforming financial data."""
+
+__all__ = [    
+    "get_3_month_tbill",
+    "get_ticker_data"
+    "load_price_data",
+    "load_60_days_of_prices",
+    "download",
+    "get_company_financials",
+    "get_options_data"
+]
+
 import yfinance as yf
 import pandas as pd
 import numpy as np
@@ -24,7 +35,7 @@ def download(ticker, start=None, end=None):
     return yf.download(ticker, start, end)
 
 def get_financials(ticker):
-    """Get Income S."""
+    """Get Income Statement"""
     try:
         stock = yf.Ticker(ticker)
 
@@ -104,17 +115,6 @@ def get_options_data(ticker_symbol):
         # Calls and puts DataFrames
         calls_df = option_chain.calls
         puts_df = option_chain.puts
-
-        # print("\nCalls sample:")
-        # print(calls_df.head())
-
-        # print("\nPuts sample:")
-        # print(puts_df.head())
-
-        # Optional: Save to CSV
-        # calls_df.to_csv(f"{ticker_symbol}_calls_{first_expiration}.csv", index=False)
-        # puts_df.to_csv(f"{ticker_symbol}_puts_{first_expiration}.csv", index=False)
-        # print(f"\nData saved to CSV for {ticker_symbol} ({first_expiration}).")
 
         return calls_df, puts_df
 

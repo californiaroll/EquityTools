@@ -2,7 +2,7 @@
 
 __all__ = [    
     "get_3_month_tbill",
-    "get_ticker_data"
+    "get_ticker_data",
     "load_price_data",
     "load_60_days_of_prices",
     "download",

@@ -5,7 +5,7 @@ Predictive modeling utilities for financial forecasting.
 
 __all__ = [    
     "factorial",
-    "merton_jump_call"
+    "merton_jump_call",
     "bs_call",
     "inverse_normal",
     "dcf_valuation",

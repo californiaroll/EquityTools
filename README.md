@@ -28,9 +28,10 @@ EquityTools/
 ├── run_tests.ipynb  
 │  
 ├── Notebooks/  
+│   ├── etf_get_holdings.ipynb
 │   ├── portfolio_calculate_sharpe_ratio.ipynb  
 │   ├── portfolio_country_breakdown.ipynb  
-│   ├── stock_annual_volatility.ipynb  
+│   ├─ ─ stock_annual_volatility.ipynb  
 │   ├── stock_chart_with_rsi_and_bollinger.ipynb  
 │   ├── stock_dcf_valuation1.ipynb  
 │   ├── stock_jump_diffusion_option_pricing1.ipynb  
@@ -191,3 +192,16 @@ Trading platforms often include Bollinger Bands as a feature, allowing easy visu
 ####
 
 <img width="1212" height="623" alt="image" src="https://github.com/user-attachments/assets/d99603d8-abb9-4d23-862e-b181a0eb2ce9" />
+
+## ☑️ Notebooks/etf_get_holdings.ipynb
+### User can enter etf ticker and get the top holding for the ETF by market weight and a breakdown of the sectors in the ETF.
+
+<img width="975" height="827" alt="image" src="https://github.com/user-attachments/assets/9eea3b1c-da70-43db-b7e5-1d4ff188b1bd" />
+
+<img width="978" height="838" alt="image" src="https://github.com/user-attachments/assets/27915ae0-0a89-468b-9235-9e0fad7ddde0" />
+
+
+
+
+
+

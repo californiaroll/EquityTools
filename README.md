@@ -28,7 +28,7 @@ EquityTools/
 ├── run_tests.ipynb  
 │  
 ├── Notebooks/  
-│   ├── etf_get_holdings.ipynb
+│   ├── etf_get_holdings.ipynb   
 │   ├── portfolio_calculate_sharpe_ratio.ipynb  
 │   ├── portfolio_country_breakdown.ipynb  
 │   ├─ ─ stock_annual_volatility.ipynb  
